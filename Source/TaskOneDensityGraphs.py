@@ -4,11 +4,14 @@
 
 import numpy as np
 import matplotlib.pyplot as plt 
-import scipy 
+import scipy
+import os
 from scipy import optimize 
 
+
 # Open data file
-density_File= open("DDC100_01_mass_density.txt")
+folder = os.path.dirname(__file__)
+density_File = open(os.path.join(folder,"../MassDensities/100/1.txt"))
 
 #Read first line with column headings.
 headerLine=density_File.readline()
@@ -60,7 +63,7 @@ import scipy
 from scipy import optimize 
 
 # Open data file
-density_File= open("DDC100_01_mass_density.txt")
+density_File = open(os.path.join(folder,"../MassDensities/100/1.txt"))
 
 #Read first line with column headings.
 headerLine=density_File.readline()
@@ -72,7 +75,7 @@ print (data_Items)
 
 # Load the density data into a 2-D array
 data_Array=np.loadtxt(density_File)
-
+density_File= open(os.path.join(folder,"../MassDensities/100/1.txt"))
 # Extract x and y arrays to plot the water density
 depth_plot=data_Array[:,data_Items.index('nm')] 
 water_density_plot=data_Array[:,data_Items.index('H2O')]
