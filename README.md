@@ -1,35 +1,40 @@
 
-# Computational Chemistry [![Badge License]][License]
-
+# Computational Chemistry   [![Badge License]][License]
 
 <br>
 
 ## Requirements
 
-- **[Python]**
+-   **[Python]**
 
-- **Some modules:**
+-   **Some Modules:**
  
-  - `matplotlib`
-  - `numpy`
-  - `scipy`
+    - [`matplotlib`]
+    - [`numpy`]
+    - [`scipy`]
   
-  <br>
+    <br>
   
-  ```
-  pip install matplotlib numpy scipy
-  ```
+    ```Shell
+    pip install     \
+        matplotlib  \
+        numpy       \
+        scipy
+    ```
 
-
-
-
-
+<br>
 
 
 <!----------------------------------------------------------------------------->
 
+[`matplotlib`]: https://pypi.org/project/matplotlib/
+[`numpy`]: https://pypi.org/project/numpy/
+[`scipy`]: https://pypi.org/project/scipy/
+[Python]: https://www.python.org/downloads/
 
-[Badge License]: https://img.shields.io/badge/License-Unknown-darkgray
 [License]: #
 
-[Python]: https://www.python.org/downloads/
+
+<!---------------------------------[ Badges ]---------------------------------->
+
+[Badge License]: https://img.shields.io/badge/License-Unknown-6c6c6c?style=for-the-badge&labelColor=lightgray
